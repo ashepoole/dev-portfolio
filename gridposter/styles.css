@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
+
+.noselect 
+{
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+body 
+{
+    background-image:url(img/wall.jpg);
+    background-repeat:repeat;
+	background-color:#ededed;
+}
+
+ul
+{
+	padding:0;
+	margin:0;
+}
+
+li
+{
+	list-style-type:none;
+	margin:0 0 5px 0;
+	padding:0;
+	color:black;
+	display:flex;
+    font-family: 'Lato', sans-serif;
+	font-weight:700;
+}
+
+#gridcontainer
+{
+	margin:0 auto;
+	padding-top:30px;
+	width:1000px;
+	height:1500px;
+	display:grid;
+	grid-template-columns:2.5fr 2fr 2fr 1fr 1.50fr;
+	grid-template-rows:6fr .90fr .90fr 1fr 1.1fr 2fr 1.5fr;
+	grid-column-gap:1px;
+	grid-row-gap:1px;
+	transform: rotate(-.5deg);
+}
+
+#circle
+{
+	background-image:url(img/circle.jpg);
+	background-color:#edcf55;
+	border-radius: 50%;
+	display: grid;
+	grid-column-start:3;
+	grid-column-end:5;
+	grid-row-start:3;
+	grid-row-end:6;
+	align-content:center;
+	justify-content:center;
+	font-weight:900;
+	font-size:2em;
+	color:black;
+}
+
+#belowcircle
+{
+	grid-column-start:4;
+	grid-column-end:5;
+	grid-row-start:5;
+	grid-row-end:7;
+	font-size:.8em;
+}
+
+#abovecircle
+{
+	grid-column-start:4;
+	grid-column-end:6;
+	grid-row-start:2;
+	grid-row-end:3;
+	align-self:start;
+}
+
+#belowcircle li
+{
+	font-size:1em;
+	text-align:left;
+}
+
+#background
+{
+	grid-column-start:1;
+	grid-column-end:6;
+	grid-row-start:1;
+	grid-row-end:8;
+	background-image:url(img/background.jpg);
+	background-color:#f5ead4;
+	box-shadow: 5px 5px 6px #888888;
+}
+
+#totheleft
+{
+	grid-column-start:1;
+	grid-column-end:2;
+	grid-row-start:3;
+	grid-row-end:4;
+	align-self:flex-end;
+	justify-self:end;
+	padding-bottom:10px;
+	font-weight:900;
+	font-size:1.1em;
+}
+
+#throughcircle
+{
+	grid-column-start:1;
+	grid-column-end:6;
+	grid-row-start:4;
+	grid-row-end:5;
+	border-top:2px solid black;
+}
+
+#smallcircle
+{
+	background:black;
+    width:12px;
+    height:12px;
+	margin:4px 4px 0 0;
+    border-radius: 50%;
+	grid-column-start:3;
+	grid-column-end:4;
+	grid-row-start:2;
+	grid-row-end:3;
+	align-self:start;
+	justify-self:end;
+}
+
+#credits
+{
+	margin:0 auto;
+	padding:10px 0 30px 0;
+	width:1000px;
+	font-family: 'Lato', sans-serif;
+	font-weight:400;
+	text-align:right;
+}
