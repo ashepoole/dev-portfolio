@@ -1,0 +1,19 @@
+Example 1:
+Sinuon Pream was 37 years old when she was shot and tasered by police in Long Beach, California. 
+BLACKOUT—NO BODY CAMERA FOOTAGE
+
+Example 2:
+Luke Smith was 15 years old when he was shot and tasered by police in Watsonville, California. 
+VISIBLE—BODY CAMERA FOOTAGE
+
+Syntax:
+[Name] was [age] years old when [translated data: gender] was [manner of death] by police in [city], [translated data: state].
+BACKGROUND COLOR: [body camera footage true or false?]
+
+Concept 1:
+The design picks random profiles every few seconds. Those with body camera footage are shown on a clearly contrasting background, while those without are shown on a dark grey background with black text that is intentionally hard to read.
+
+Concept 2:
+The code outputs a paragraph for every single person in the list, creating a nearly endlessly scrolling list of police killings.
+
+Syntax: [Date]: [Name] was [age] years old when [translated data: gender] was [manner of death] by police in [city], [translated data: state].
